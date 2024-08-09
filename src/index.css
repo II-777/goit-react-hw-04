@@ -8,3 +8,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
