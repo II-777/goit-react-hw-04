@@ -9,13 +9,6 @@ tags: goit react hw-04
 
 https://goit-react-hw-04-self-iota.vercel.app/
 
-## REQUIRED REACT LIBRARIES
-
-- [REACT LIB: axios](https://axios-http.com/) 
-- [REACT LIB: react-loader-spinner](https://github.com/mhnpd/react-loader-spinner)
-- [REACT LIB: react-hot-toast](https://react-hot-toast.com/)
-- [REACT LIB: react-hot-toast docs](https://react-hot-toast.com/docs)
-- [REACT LIB: react-modal](https://github.com/reactjs/react-modal?tab=readme-ov-file#examples)
 
 ### UNSPLASH API DOCS 
 

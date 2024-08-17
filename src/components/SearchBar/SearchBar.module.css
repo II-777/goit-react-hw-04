@@ -2,7 +2,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 100vw;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
 .searchForm {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100%; /* Adjusted from 100vw to 100% */
   max-width: 600px;
   border-radius: 3px;
   overflow: hidden;
@@ -26,8 +26,8 @@
 }
 
 .searchFormInput {
+  font-family: Sans-Serif;
   flex: 1;
-  font: inherit;
   font-size: 20px;
   border: none;
   outline: none;
@@ -39,6 +39,7 @@
 .searchFormInput::placeholder {
   font: inherit;
   font-size: 18px;
+  font-family: Sans-Serif;
   color: #888;
 }
 
@@ -73,4 +74,25 @@
   white-space: nowrap;
   clip-path: inset(50%);
   border: 0;
+}
+
+@media (max-width: 280px) {
+  .searchBarHeader {
+    padding: 8px 16px;
+  }
+
+  .searchForm {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  .searchFormInput {
+    font-size: 16px;
+  }
+
+  .searchFormBtn {
+    width: 40px;
+    height: 40px;
+  }
 }
