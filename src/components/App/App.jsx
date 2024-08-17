@@ -66,16 +66,7 @@ const App = () => {
     loadImages();
   }, [query, currentPage]);
 
-  // Effect Hook: Manage Scroll Lock
-  useEffect(() => {
-    document.body.classList.toggle('scroll-lock', modalIsOpen);
-
-    return () => {
-      document.body.classList.remove('scroll-lock');
-    };
-  }, [modalIsOpen]);
-
-  // Handler Functions 
+  // Handler Functions
   const handleSearch = (newQuery) => {
     if (newQuery.trim() === '') {
       toast.error('Enter a query');
